@@ -28,16 +28,16 @@
  # Implementation:
  
      There are various ways to implement a queue in Python. Queue in Python can be implemented by the following ways:
-     * list
+     ### List
      
            List is a Python’s built-in data structure that can be used as a queue. Instead of enqueue() and dequeue(), append() and pop()
            function is used. 
            However, lists are quite slow for this purpose because inserting or deleting an element at the beginning requires shifting all 
            of the other elements by one, requiring O(n) time.
            
-     * collections.deque
+     ### Collections.deque
      
-           Queue in Python can be implemented using deque class from the collections module. Deque is preferred over list in the cases where
+          Queue in Python can be implemented using deque class from the collections module. Deque is preferred over list in the cases where
            we need quicker append and pop operations from both the ends of container, as deque provides an O(1) time complexity for append 
            and pop operations as compared to list which provides O(n) time complexity. Instead of enqueue and deque, append() and popleft()
            functions are used.
